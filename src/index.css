@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Header yukarıda, içerik aşağıda */
+  justify-content: flex-start; /* Header yukarıda sabit */
+  align-items: center; /* İçerik ortada */
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+#root {
+  width: 100%;
+}
