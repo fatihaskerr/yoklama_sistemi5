@@ -21,7 +21,7 @@ const StudentDataCollection = () => {
     try {
       setIsLoading(true);
       // API noktası gerçekte farklı olabilir
-      const response = await fetch('http://localhost:5000/api/veri-topla/ogrenci-listesi');
+      const response = await fetch('http://localhost:5000/api/student/ogrenci-listesi');
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -79,7 +79,7 @@ const StudentDataCollection = () => {
       setIsProcessing(true);
       setMessage(null);
       
-      const response = await fetch('http://localhost:5000/api/veri-topla/ogrenci/veri-topla', {
+      const response = await fetch('http://localhost:5000/api/student/ogrenci/veri-topla', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -145,7 +145,7 @@ const StudentDataCollection = () => {
     
     try {
       setIsLoading(true);
-      const response = await fetch(`http://localhost:5000/api/veri-topla/ogrenci/veri-sil/${studentId}`, {
+      const response = await fetch(`http://localhost:5000/api/student/ogrenci/veri-sil/${studentId}`, {
         method: 'DELETE'
       });
       
