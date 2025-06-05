@@ -23,7 +23,7 @@ def create_app():
     app.register_blueprint(auth, url_prefix='/api/auth')
     app.register_blueprint(courses, url_prefix='/api/courses')
     app.register_blueprint(attendance_routes, url_prefix='/api/attendance')
-    app.register_blueprint(veri_topla, url_prefix='/api/veri-topla')  # Yeni blueprint'i kaydet
+    app.register_blueprint(veri_topla, url_prefix='/api/student')  # Yeni blueprint'i kaydet
     app.register_blueprint(face_attendance, url_prefix='/api/face-attendance')
     app.register_blueprint(student_data, url_prefix='/api/student')
 

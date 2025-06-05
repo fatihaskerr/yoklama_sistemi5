@@ -94,6 +94,6 @@ Temel API endpointleri:
 - `/api/auth/users` - Kullanıcıları listeleme (Admin)
 - `/api/courses/` - Ders yönetimi
 - `/api/face-attendance/` - Yüz tanıma ile yoklama
-- `/api/veri-topla/` - Öğrenci yüz verisi toplama
+- `/api/student/` - Öğrenci yüz verisi toplama
 
 Daha fazla detay için API dokümantasyonuna bakın. 
